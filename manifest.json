@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Milian Scrape",
+    "version": "0.1",
+    "description": "Extracts textual content from webpages for flexible re-styling and exporting.",
+    "content_scripts": [
+        {
+            "matches": ["*://*.supermemo.guru/*"],
+            "js": ["main.js"],
+            "css": ["styles.css"]
+        }
+    ]
+}
